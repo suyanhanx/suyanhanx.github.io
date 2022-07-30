@@ -1,0 +1,40 @@
+widgets:
+  # Profile widget configurations
+  -
+    # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: profile
+    # Author name
+    author: Suyan
+    # Author title
+    author_title: Suyan
+    # Author's current location
+    location: Shanghai
+    # URL or path to the avatar image
+    avatar: https://s2.loli.net/2022/07/30/OSqms7v3wxpyU4J.jpg
+    # Whether show the rounded avatar image
+    avatar_rounded: false
+    # Email address for the Gravatar
+    gravatar: suyanhanx@gmail.com
+    # URL or path for the follow button
+    follow_link: https://github.com/suyanhanx
+    # Links to be shown on the bottom of the profile widget
+    social_links:
+      Github:
+        icon: fab fa-github
+        url: https://github.com/suyanhanx
+      Twitter:
+        icon: fab fa-twitter
+        url: https://twitter.com/suyanhanx
+      RSS:
+        icon: fas fa-rss
+        url: /
+  # Table of contents widget configurations
+  -
+    # Where should the widget be placed, left sidebar or right sidebar
+    position: left
+    type: toc
+    # Whether to collapse sub-headings when they are out-of-view
+    collapsed: true
+    # Maximum level of headings to show (1-6)
+    depth: 3
