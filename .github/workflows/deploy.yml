@@ -1,25 +1,48 @@
-name: deploy blog To github
+# This is a basic workflow to help you get started with Actions
+
+name: Build And Publish Blog
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
         with:
-          persist-credentials: false
-          # 0 indicates all history for all branches and tags.
-          fetch-depth: 0
-      - name: Restore file modification time
-        run: |
-          echo "将source文件夹下的md文件的修改时间恢复成该文件最新的提交时间"
-          find source -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
-      - name: Install and Build 🔧
-        run: |
-          echo "Install && Publish site to github pages ..."
-          yarn
-          yarn build
+          submodules: true
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      # Runs a single command using the runners shell
+      - name: Install Package
+        run: yarn global add hexo-cli && yarn
+
+      - name: Generate Html File
+        run: hexo g
+
+      # Runs a set of commands using the runners shell
+      - name: Deploy To Repo🚀
+        if: ${{ github.ref == 'refs/heads/master'}}
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy.
+      - name: Upload to Collect Repo
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          BRANCH: build-${{ github.run_id }} # The branch the action should deploy to.
+          FOLDER: public # The folder the action should deploy.

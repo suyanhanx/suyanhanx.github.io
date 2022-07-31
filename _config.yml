@@ -8,6 +8,9 @@ timezone: 'Asia/Shanghai'
 url: https://suyan.moe
 permalink: 'posts/:abbrlink/:name/'
 permalink_defaults: null
+abbrlink:
+  alg: crc32
+  rep: hex
 pretty_urls:
   trailing_index: true
   trailing_html: true
