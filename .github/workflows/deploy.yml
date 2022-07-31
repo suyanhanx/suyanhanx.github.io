@@ -37,12 +37,12 @@ jobs:
         if: ${{ github.ref == 'refs/heads/master'}}
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          ssh-key: ${{ secrets.DEPLOY_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: public # The folder the action should deploy.
-      - name: Upload to Collect Repo
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-          BRANCH: build-${{ github.run_id }} # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
+#      - name: Upload to Collect Repo
+#        uses: JamesIves/github-pages-deploy-action@3.7.1
+#        with:
+#          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+#          BRANCH: build-${{ github.run_id }} # The branch the action should deploy to.
+#          FOLDER: public # The folder the action should deploy.

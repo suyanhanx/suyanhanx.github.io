@@ -28,7 +28,7 @@ toc: true
 首个 UPS 专利由约翰 · J · 汉利在1932年11月2日申请，并最终在1934年4月3日获得。
 [APPARATUS FOR MAINTAINING AN UNFAIL NG AND UNENTERRUPTED SUPPLY OF ELECTRICAL ENERGY](https://patentimages.storage.googleapis.com/eb/5e/df/208b89f013b7e9/US1953602.pdf)
 
-UPS在其发展初期，仅被视为一种备用电源。后来，由于电压浪涌、电压尖峰、电压瞬变、电压跌落、持续过压或者欠压甚至电压中断等电网质量问题，使计算机等设备的电子系统受到干扰，造成敏感元件受损、信息丢失等严重后果，引起巨大的经济损失。
+UPS在其发展初期，仅被视为一种备用电源。后来，由于电压浪涌、电压尖峰、电压瞬变、电压跌落、持续过压或者欠压甚至电压中断等电网质量问题，会使计算机等设备的电子系统受到干扰，造成敏感元件受损、信息丢失等严重后果，引起巨大的经济损失。
 因此，UPS日益受到重视，并逐渐发展成具备稳压、稳频、滤波、抗电磁和射频干扰、防电压浪涌等功能的电力保护系统。
 
 
@@ -54,6 +54,9 @@ UPS在其发展初期，仅被视为一种备用电源。后来，由于电压�
     2. 无转换时间；
     3. 结构复杂，成本较高；
 
+注：
+1. 转换时间：即 UPS 供电由市电切换为内部电池的时间差；
+2. 旁路：当 UPS 本身故障时，藉由 UPS 内部的继电器 (Relay) 自动切换至市电，由旁路电路持续供应电力给负载设备，使 UPS 不会因此造成电力中断。[旁路](https://baike.baidu.com/item/%E6%97%81%E8%B7%AF/5310018)
 
 ## UPS 的一些特色功能
 1. UPS 很安静；
@@ -63,7 +66,7 @@ UPS在其发展初期，仅被视为一种备用电源。后来，由于电压�
 还有一些特别的：
 
 1. [癮觀點：你可能沒想過的面向，UPS追求效率與虛擬化管理](https://www.cool3c.com/article/116027)
-2. 据 Manjusaka 表示，，接入 UPS 后，Mac 会调整 SSD 的读写策略。我没能找到原文。
+2. 据 [@Manjusaka](https://github.com/Zheaoli) 表示，接入 UPS 后，Mac 会调整 SSD 的读写策略。这似乎是一种推测。参考[Apple 对 UPS 的设置文档](https://support.apple.com/guide/mac-help/change-energy-saver-preferences-mchlp1168/mac)
 
 # 怎么挑选 USP
 请参考 [2022年1月UPS不间断电源选购指南](https://zhuanlan.zhihu.com/p/257918027)
