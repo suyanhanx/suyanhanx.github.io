@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Suyan</title>
+  
+  <subtitle>Suyan&#39;s blog</subtitle>
+  <link href="https://suyan.moe/atom.xml" rel="self"/>
+  
+  <link href="https://suyan.moe/"/>
+  <updated>2022-07-31T03:08:23.858Z</updated>
+  <id>https://suyan.moe/</id>
+  
+  <author>
+    <name>Suyan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="https://suyan.moe/posts/62291/hello-world/"/>
+    <id>https://suyan.moe/posts/62291/hello-world/</id>
+    <published>2022-07-31T03:08:23.858Z</published>
+    <updated>2022-07-31T03:08:23.858Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="https://suyan.moe/categories/test/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日常生活中精密器械面对断电等电力问题的一种解决方案 --- UPS 介绍</title>
+    <link href="https://suyan.moe/posts/65399/ups/"/>
+    <id>https://suyan.moe/posts/65399/ups/</id>
+    <published>2022-07-30T01:29:49.000Z</published>
+    <updated>2022-07-31T03:08:23.858Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;日常中会遇到什么样的电力问题？&quot;&gt;&lt;a href=&quot;#日常中会遇到什么样的电力问题？&quot; class=&quot;headerlink&quot; title=&quot;日常中会遇到什么样的电力问题？&quot;&gt;&lt;/a&gt;日常中会遇到什么样的电力问题？&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;断电；&lt;/li&gt;
+&lt;li&gt;雷击等浪涌冲击；&lt;/li&gt;
+&lt;li&gt;紧急情况下需要续航支持；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;那遇到这些问题，有什么解决办法吗？&lt;br&gt;选用 UPS 就是一种比较方便的解决方案。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="hardware" scheme="https://suyan.moe/categories/hardware/"/>
+    
+    
+    <category term="hardware" scheme="https://suyan.moe/tags/hardware/"/>
+    
+    <category term="intro" scheme="https://suyan.moe/tags/intro/"/>
+    
+  </entry>
+  
+</feed>
