@@ -1968,11 +1968,6 @@ hexo-theme-icarus@^5.0.1:
     moment "^2.22.2"
     semver ">=5.0.0"
 
-hexo-theme-landscape@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmmirror.com/hexo-theme-landscape/-/hexo-theme-landscape-0.0.3.tgz"
-  integrity sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw==
-
 hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.2.0, hexo-util@^2.4.0, hexo-util@^2.5.0, hexo-util@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npmmirror.com/hexo-util/-/hexo-util-2.6.1.tgz"
@@ -2648,10 +2643,10 @@ pkg-dir@^3.0.0:
   dependencies:
     find-up "^3.0.0"
 
-pnpm@^7.7.0:
-  version "7.7.0"
-  resolved "https://registry.npmmirror.com/pnpm/-/pnpm-7.7.0.tgz"
-  integrity sha512-gI1AONpLi/e9oUKwcPH4pu/kdCnizH7zgIAuXzmvGrOJN1SjL/bXMfCV2jt6+SB3Io+moqNN6xkj0C6a0E7tcg==
+pnpm@^7.13.4:
+  version "7.13.4"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-7.13.4.tgz#ab7fb3f13e4b62ccc49a7edefbd618c042560f75"
+  integrity sha512-ZaP5+PRzXI0g4KijU7zx4hi7RUJcSYBJIb90e+lyTeQyRw91+peJoFAzWa63+4fjJIz6CqY0cNkP7trZXh5l8w==
 
 prelude-ls@~1.1.2:
   version "1.1.2"
